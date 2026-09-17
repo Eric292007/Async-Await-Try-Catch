@@ -66,5 +66,46 @@ void main() {
   // nama = 'Wendy';
   // print(nama);
 
-  
+  //untuk 3 orang
+
+  //user input 3 jenis data
+  //data 1 tipe string (nama)
+  //data 2 tipe int (umur)
+  //data 3 tipe num(berat)
+  //fungsi yang ada pengembalian nilai List<Map>
+  //Dalam fungsi ada nerima input 3(String nama, int umur, double berat)
+  //Proses dalam fungsi adalah gimana cara 3 input ini jadi map baru list.add()
+  //return list <Map>
+  //print nama saya a, umur b, berat saya c
+
+  //fungsi, list map, perubahan tipe data
+
+  // List<Map> cetak(String nama, int umur, double berat) {
+  //   return [
+  //     {'nama': 'Wendy', 'Umur': 39, 'Berat': 58.5},
+  //   ];
+  // }
+
+  // var nilai = cetak('Wendy', 39, 58.5);
+  // print("nama saya ${nilai[0]['nama']}");
+
+  //Point
+
+  stdout.writeln('Masukkan nama : ');
+  var nama = stdin.readLineSync() ?? '';
+  stdout.writeln('Masukkan umur : ');
+  var umur = int.parse(stdin.readLineSync() ?? '');
+  stdout.writeln('Masukkan berat : ');
+  var berat = double.parse(stdin.readLineSync() ?? '');
+
+  List<Map> cetak(String nama, int umur, double berat) {
+    return [
+      {'nama': nama, 'Umur': umur, 'Berat': berat},
+    ];
+  }
+
+  var nilai = cetak(nama, umur, berat);
+  print(
+    "nama saya ${nilai[0]['nama']}, umur saya ${nilai[0]['Umur']}, dan berat saya ${nilai[0]['Berat']}",
+  );
 }
