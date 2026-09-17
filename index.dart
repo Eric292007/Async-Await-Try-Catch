@@ -60,4 +60,11 @@ void main() {
 
   // num nilai = hitung(100, 200, 300);
   // print(nilai);
+
+  //late
+  // late String nama;
+  // nama = 'Wendy';
+  // print(nama);
+
+  
 }
